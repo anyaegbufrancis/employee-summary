@@ -6,21 +6,18 @@ class Employee  {
         this.id = id;
         this.email = email;
     }
-    get getName(name) {
+    getName () {
         return this.name
     }
-    get getName(id) {
+    getId () {
         return this.id
     }
-    get getName(email) {
+    getEmail () {
         return this.email
-    }    
+    } 
+    getRole () {       
+        return 'Employee' 
+    }   
 }
 
-
-
-// class Manager extends Employee {
-//     constructor (officeNumber) {
-//         this.officeNumber = officeNumber
-//     }    
-// }
+module.exports = Employee
