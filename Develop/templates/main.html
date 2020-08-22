@@ -9,24 +9,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
-            </div>
+<body style="position: relative; min-height: 100vh;">
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container text-center">
+            <h1 class="display-4" style="font-size: 80px; font-weight: bolder; color: brown;">The Team</h1>
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
+        <div id="content-wrap" style="margin-bottom: 3rem;">
+            <div class="row justify-content-center">
                 {{ team }}
             </div>
         </div>
     </div>
+    <hr style="background-color: darkred;position: absolute; bottom: 0; width: 100%; height: 3rem;">
+    <br>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50"
+        style="position: absolute; bottom: 0; width: 100%; height: 3.5rem;">
+        <div class="container text-center">
+            <small>Copyright &copy; Team Profile</small>
+        </div>
+    </footer>
 </body>
 
 </html>
