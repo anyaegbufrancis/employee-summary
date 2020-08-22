@@ -27,7 +27,7 @@
  ## Usage
  
  Please see below:
- ![Testing 1](./utils/execution.png)
+ ![Testing 1](./utils/Execution.png)
  ![Testing 2](./utils/output-render.png)
  
  ## License
